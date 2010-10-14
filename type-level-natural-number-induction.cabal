@@ -5,8 +5,18 @@ License-file:        LICENSE
 Author:              Gregory Crosswhite
 Maintainer:          Gregory Crosswhite <gcross@phys.washington.edu>
 Stability:           Provisional
-Synopsis:            Decidable operations on type-level natural numbers.
-Description:         
+Synopsis:            High-level combinators for performing inductive operations.
+Description:         This package provides high-level combinators for working
+		     with inductive structures --- that is, structures tagged
+                     with a phantom type-level natural number.  Combinators
+		     are provided for building up a structure from seed data
+		     using induction, tearing down a structure to obtain a
+		     result, and inductively transforming one structure into
+		     another with the same size.
+		     .
+		     This package uses the type-level-natural-number package for
+		     its type-level representations of the natural numbers.  The
+		     only non-Haskell 2010 extension it needs is Rank2Types.
 Cabal-version:       >=1.2.3
 Build-type:          Simple
 Category:	     Type System,Data
